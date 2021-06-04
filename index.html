@@ -10,7 +10,11 @@
 </div>
 <script src="https://cdn.bootcdn.net/ajax/libs/three.js/r128/three.js"></script>
 <script>
-    const isMobile = false;
+    function isMobileMode() {
+        let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+        return flag;
+    }
+    const isMobile = isMobileMode();
 
     let scene, camera, renderer;
 
