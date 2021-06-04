@@ -75,7 +75,7 @@
 
     // 创建 几何体、材质、模型、立方体纹理
     const createMesh = () => {
-        const baseUrl = './image/';
+        const baseUrl = 'https://raw.githubusercontent.com/hfxiang93/vr/master/image/';
 
         const textureLoader = new THREE.CubeTextureLoader().setPath(baseUrl); // 立方纹理
         const arr = ['posx.jpg', 'negx.jpg', 'negy.jpg', 'posy.jpg', 'negz.jpg', 'posz.jpg']; // 6张纹理图依次贴在立方体的x正(前)、x负（后）、y负（上）、y正（下）、z负（左）、z正（右） 的 顺序放置的
